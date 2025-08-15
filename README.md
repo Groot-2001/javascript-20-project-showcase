@@ -36,7 +36,7 @@ Welcome to the **20 JavaScript Projects Collection**! This repository features a
 
 1. Clone this repository:
     ```
-    git clone https://github.com/groot-2001/js-mini-projects-collection.git
+    git clone [https://github.com/groot-2001/js-mini-projects-collection.git](https://github.com/Groot-2001/javascript-20-project-showcase.git)
     ```
 2. Open the project folder for any app you want to try.
 3. Follow the instructions in the individual project’s README to run locally.
