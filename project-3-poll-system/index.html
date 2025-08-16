@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive poll system to gather user opinions on programming languages">
+    <title>Programming Language Poll | Developer Preferences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main class="container">
+        <article class="poll-card" aria-labelledby="poll-heading">
+            <header class="poll-header">
+                <h1 id="poll-heading" class="poll-title">Developer Language Preferences</h1>
+                <p class="poll-description">Help us understand the developer community's favorite programming languages
+                </p>
+            </header>
+
+            <form id="poll-form" class="poll-form" novalidate>
+                <fieldset class="poll-options">
+                    <legend class="poll-question">What is your favorite programming language?</legend>
+
+                    <div class="option-grid">
+                        <div class="option-card">
+                            <input type="radio" name="programming-language" id="javascript" value="javascript"
+                                class="option-input" required>
+                            <label for="javascript" class="option-label">
+                                <span class="option-icon" aria-hidden="true">🟨</span>
+                                <span class="option-text">JavaScript</span>
+                            </label>
+                        </div>
+
+                        <div class="option-card">
+                            <input type="radio" name="programming-language" id="go" value="go" class="option-input">
+                            <label for="go" class="option-label">
+                                <span class="option-icon" aria-hidden="true">🟦</span>
+                                <span class="option-text">Go</span>
+                            </label>
+                        </div>
+
+                        <div class="option-card">
+                            <input type="radio" name="programming-language" id="python" value="python"
+                                class="option-input">
+                            <label for="python" class="option-label">
+                                <span class="option-icon" aria-hidden="true">🟩</span>
+                                <span class="option-text">Python</span>
+                            </label>
+                        </div>
+
+                        <div class="option-card">
+                            <input type="radio" name="programming-language" id="cpp" value="cpp" class="option-input">
+                            <label for="cpp" class="option-label">
+                                <span class="option-icon" aria-hidden="true">🟪</span>
+                                <span class="option-text">C++</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="poll-actions">
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">Submit Vote</span>
+                        <span class="button-icon" aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </form>
+
+            <section id="poll-results" class="poll-results" aria-live="polite" hidden>
+                <h2 class="results-heading">Current Poll Results</h2>
+                <div class="results-container">
+                    <!-- Results will be inserted here dynamically -->
+                </div>
+                <div class="results-meta">
+                    <p class="total-votes"><span id="votes-count">0</span>&nbsp; total votes</p>
+                    <button id="share-button" class="share-button">Share Results</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="index.js" defer></script>
+    <script>
+        // Remove no-js class if JavaScript is enabled
+        document.documentElement.classList.remove('no-js');
+    </script>
+</body>
+
+</html>
