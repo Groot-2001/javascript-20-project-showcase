@@ -11,26 +11,9 @@ Welcome to the **20 JavaScript Projects Collection**! This repository features a
 
 ### 📋 Project List
 
-1. Random Quote Generator
-2. To-Do List App
-3. Weather Dashboard
-4. Calculator
-5. Digital Clock
-6. Form Validation Page
-7. Quiz App
-8. Countdown Timer
-9. Image Carousel
-10. Password Generator
-11. Notes App
-12. Expense Tracker
-13. Memory Game
-14. BMI Calculator
-15. Theme Switcher
-16. Random Color Picker
-17. Github Profile Viewer
-18. Virtual Drum Kit
-19. Drag & Drop List
-20. Simple Chat Application
+1. Stopwatch Timer
+2. Vowel Checker
+3. Poll System
 
 ## 🚀 Getting Started
 
